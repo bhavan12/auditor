@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data </title>
+  </head>
+  <body>
+  <form method = "POST">
+         AuditorID:<input type = "number" name = "num1" />
+         siteid:<input type = "number" name = "num2" />
+         deptid:<input type = "number" name = "num3" />
+         <input type = "submit"/>
+      </form>
+    		<table>
+    <tr>
+        <th>auditorid</th>
+        <th>siteid</th>
+        <th>deptid</th>
+        <th>cper</th>
+    </tr>
+    {% for x,x1,x2,x3,y in z %}
+    <tr>
+        <th>{{x}}</th>
+        <th>{{x1}}</th>
+        <th>{{x2}}</th>
+        <th>{{y}}</th>
+    </tr>
+      {%endfor%}
+</table>
+  <h>predicting the auditor future critical percentage </h>
+  <table>
+
+      <th>auditorid</th>
+        <th>siteid</th>
+        <th>deptid</th>
+        <th>cper</th>
+       <tr>
+        <th>{{a}}</th>
+        <th>{{b}}</th>
+        <th>{{c}}</th>
+        <th>{{e}}</th>
+    </tr>
+  </table>
+<div>
+  	<div style="float: left; ">
+  		<h1>auditor</h1>
+    <img src="/donut_pie_cha/" alt="Simple pie chart">
+    </div>
+
+    <div style="float: right;">
+    	<h1>siteid</h1>
+    <img src="/bar_grap/" alt="Bar graph">
+    </div>
+    </div>
+  </body>
+</html>
